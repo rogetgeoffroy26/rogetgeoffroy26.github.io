@@ -1,0 +1,14 @@
+html,body{
+margin:0;
+padding:0;
+width:100%;
+height:auto;
+
+}
+
+p{
+font:2em Arial, sans-serif, mono, silver;
+}
+h1{
+font:4em Arial, sans-serif, mono, black;
+}
