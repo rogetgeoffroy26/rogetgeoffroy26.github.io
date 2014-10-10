@@ -304,6 +304,14 @@ h1 span {
 
 }
 
+#text3{
+	margin-top:135%;
+	margin-left:46%;
+		position: absolute;
+
+}
+
+
 #proscons{
 	color:rgba(0,0,0,0.5);
 	font-family: 'Open Sans Condensed', sans-serif;
