@@ -1,105 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>CSS Zen Garden Essay</title>
+<style type="text/css">
+body{ background:#333; }
+#canvas_container{ width:100%; margin: 0 auto; padding:0; bottom:10%;}
+#my_canvas{ background:#FFF; border:#999 -20px solid; }
+</style>
+<script>
+var bg = new Image();
+bg.src = "img/full_ani_bg4.jpg";
+function initCanvas(){
+    var ctx = document.getElementById('my_canvas').getContext('2d');
+    var cW = ctx.canvas.width, cH = ctx.canvas.height;
+	
+    function Background(){
+        this.x = 0, this.y = 0, this.w = bg.width, this.h = bg.height;
+        this.render = function(){
+            ctx.drawImage(bg, this.x--, 0);
+            if(this.x <= -499){
+                this.x = 0;
+            }
+        }
+    }
+    var background = new Background();
+	
+    function animate(){
+        ctx.save();
+        ctx.clearRect(0, 0, cW, cH);
+        // Start drawing here
+        background.render();
+        ctx.fillStyle = "orange";
+        ctx.fillRect(200,400,70,50);
+                ctx.fillRect(250,430,30,30);
+                 ctx.fillRect(190,430,30,30);
 
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="style.css">
-<script type="text/javascript" src=""></script>
 
+
+        // End drawing here
+        ctx.restore();
+    }
+    var animateInterval = setInterval(animate, 30);
+}
+window.addEventListener('load', function(event) {
+    initCanvas();
+});
+</script>
 </head>
-
 <body>
-
-<div class="wrapper">
-
-<!--"wrap div start-->
-<div id="wrap">
-<div id="home">
-<h1 class="text">
-  <span class="char1">C</span>
-  <span class="char2">S</span> 
-  <span class="char3">S</span>
-  <span class="char4"></span>
-  <span class="char5">Z</span>
-    <span class="char6">E</span>
-    <span class="char7">N</span>
-  <span class="char8"></span>
-    <span class="char9">G</span>
-  <span class="char10">A</span>
-  <span class="char11">R</span>
-  <span class="char12">D</span>
-  <span class="char13">E</span>
-  <span class="char14">N</span>
-  <span class="char15"></span>
-  <span class="char16">E</span>
-  <span class="char17">S</span>
-  <span class="char18">S</span>
-  <span class="char19">A</span>
-    <span class="char20">Y</span>
-    <span class="char21"></span>
-  <span class="char22"></span>
-    <span class="char23"></span>
-  
-
-  <!-- "wrap div end -->
-  
-</h1>
-
-<div id="header1"><h2>REVIEW</h2></div>
-
-<div id="text1"><p><a href="http://www.csszengarden.com/215/">&#187; Website 1</a></p>
-<div id="proscons">Pros:</div>
-<p>
-Simple clean code<br />
-Responsive design<br />
-Aesthetically pleasing look<br />
-Color palette works <br />
-Information is well organized and easy to read<br />
-Like the Parallax Effect<br /></p>
-
-<div id="proscons">Cons:</div>
-<p>
-Could use some more interactivity<br />
-Some of the links don’t work<br />
-</p>
-</div>
-
-<div id="text2"><p><a href="http://www.csszengarden.com/207/">&#187; Website 2</a></p>
-
-<div id="proscons">Pros:</div>
-<p>
-All the links work properly<br />
-The information is accurate and informative <br /></p>
-
-<div id="proscons">Cons:</div>
-<p>
-Design and Layout looks outdated and jumbled<br />
-The organization and font choices of the text don’t work<br />
-Overall the website has too much text <br />
-and it is confusing to discern information<br />
-</p></div>
-
-<div id="text3"><p><a>Conclusion</a></p>
-
-
-<p>
-Website 1 was simple and clean in it’s design,<br />
- had a responsive design which i liked because <br />
- it would be able to viewed on any screen size. <br />
- I also like to color palette and how the information<br />
-  is well organized. My only criticism is that it could<br />
-   be more interactive and some of the links don’t seem <br />
-   to work. Website 2 was a poorly designed website. <br />
-   It had an outdated look and layout.<br /> 
-   The information was jumbled and confusing<br /> 
-   and had too much text everywhere which made<br />
-    it difficult to discern information. <br />
-    I did like the fact the the information <br />
-    given was accurate and all the links <br />
-    worked as they’re supposed to. <br />
-
-
-</div>
-</body>
+<div id="canvas_container"><canvas id="my_canvas" width="1300" height="500"></canvas></div>
+</body>  
 </html>
