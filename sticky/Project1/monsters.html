@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<head>
+<title>Find The Monsters</title>
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="yang.css"/>
+
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="jquery-1.11.1.min%20copy%202.js"></script>
+
+
+</head>
+
+<body>
+  <div id="zombie"><img src="zombie_pic2.gif" alt="zombie_pic2" width="300" height="232"></div>
+<div id="ghost"><img src="ghost_pic1.gif" alt="ghost_pic1" width="319" height="315"></div>
+<div id="monster1"><img src="monsterUB_pic1.gif" alt="monsterUB_pic1" width="150" height="144"></div>
+<div id="box">
+  <div id="flashlight">
+        <a id="light2">FIND THE</a>
+        
+    <a id="light">MONSTERS</a></br>
+<p id="poem">I'm friends with the monster</p>
+<p id="line1">that's under my bed</p>
+<p id="line2">Get along with the voices</p>
+<p id="line3">inside of my head</p>
+
+<p id="line4">You're trying to save me</p>
+<p id="line5">stop holding your breath</p>
+<p id="line6">And you think I'm crazy</p>
+
+<p id="line7">yeah, you think I'm crazy</p>
+<p id="line8">Well, that's not fair!</p>
+</div>  
+<div id="monster2"><img src="monster_green_pic1.gif" alt="monster_green_pic1" width="300" height="270"></div>
+
+
+
+  </p>
+  <!--Back Button-->
+<a href="../index.html" class="go-back">&#9664;</a>
+<!--End-->
+
+<script>
+	//Back Button
+$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > -10) {
+					$('.go-back').fadeIn(-10);
+				} else {
+					$('.go-back').fadeOut(-10);
+				}
+			});
+			
+			
+		});
+		
+//End
+</script>	
+
+</div>
+<div id="audio">
+<audio controls autoplay loop>
+  <source src="Scary%20Sounds%20of%20Halloween.ogg" type="audio/ogg">
+  <source src="Scary%20Sounds%20of%20Halloween.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+<script>
+$(document).ready(function(){
+	$("#light2").animate({"opacity":1}, 2000);
+		$("#light2").animate({"opacity":0}, 2000);
+
+});
+</script>
+
+<script>
+$(document).ready(function(){
+$("div#zombie").mouseenter(function(){
+  $("div#zombie").animate({"width": "600px", "height":"464", "opacity":1}, 1000);
+});
+
+$("div#zombie").mouseleave(function(){
+  $("div#zombie").animate({"width": "400px", "height":"309", "opacity":0}, 1000);
+});
+});
+
+
+</script>
+
+<script>
+$("#ghost").mouseenter(function(){
+  $("#ghost").animate({"left": "-=500px", "opacity":1}, "slow");
+});
+
+$("#ghost").mouseleave(function(){
+  $("#ghost").animate({"left": "+=500px", "opacity":0}, "slow");
+});
+
+</script>
+<script>
+$("#monster1").mouseenter(function(){
+  $("#monster1").animate({"top": "-=60px", "opacity":1}, 2000);
+});
+
+$("#monster1").mouseleave(function(){
+  $("#monster1").animate({"top": "+=60px", "opacity":0}, 2000);
+});
+
+</script>
+<script>
+$("#monster2").mouseenter(function(){
+  $("#monster2").animate({"top": "+=150px","left":"+=60px", "opacity":1}, 2000);
+});
+
+$("#monster2").mouseleave(function(){
+  $("#monster2").animate({"top": "-=150px","left":"-=60px", "opacity":0}, 2000);
+});
+
+</script>
+</body>
+</html>

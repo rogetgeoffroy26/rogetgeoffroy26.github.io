@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fancyBox - Fancy jQuery Lightbox Alternative | Demonstration</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="../lib/jquery-1.10.1.min.js"></script>
+
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="../source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+
+						// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+				
+			
+			
+		});
+	</script>
+	</head>
+<body>
+					<a class="fancybox-effects-d" rel="gallery1" href="1_b%20copy.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"><img src="1_s%20copy.jpg" alt="" /></a>
+					<a class="fancybox-effects-d" rel="gallery1" href="1_b%20copy.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"><img src="1_s%20copy.jpg" alt="" /></a>
+<a class="fancybox-effects-d" rel="gallery1" href="1_b%20copy.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"><img src="1_s%20copy.jpg" alt="" /></a>
+<a class="fancybox-effects-d" rel="gallery1" href="1_b%20copy.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"><img src="1_s%20copy.jpg" alt="" /></a>
+
+
+	</body>
+</html>

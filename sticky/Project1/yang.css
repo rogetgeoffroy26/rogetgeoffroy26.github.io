@@ -1,0 +1,209 @@
+
+
+
+
+
+body{
+background: url("dark.gif")repeat center center fixed;
+-webkit-background-size: cover; //for safari and chrome
+-moz-background-size: cover; // for firefox
+-o-background-size: cover; // for opera
+background-size: cover;
+
+width:100%;
+height:auto;
+
+
+}
+p{
+		font:500 20px "Lato", "Arial";
+		color:white;
+		margin:10px;
+	    padding:20px;
+        text-transform: uppercase;
+        opacity:0;
+        
+}
+
+
+
+}
+
+body {
+  margin: 0;
+  
+  text-align: center;
+  
+  display:inline-block;
+  }
+
+
+/* box ------------------------------------------------------ */
+
+#box {
+  padding: 100px;
+  text-align: center;
+  min-width: 500px;
+  font-size: 7em;
+  font-weight: bold;
+  -webkit-backface-visibility: hidden; /* fixes flashing */
+}
+
+
+/* flashlight ------------------------------------------------------ */
+
+#flashlight {
+font:200 50px "Lato", "Arial";
+  color: hsla(0,0%,0%,0);
+  perspective: 80px;
+  outline: none;
+  
+}
+
+
+/* flash ------------------------------------------------------ */
+
+#flash {
+  display: inline-block;
+  text-shadow: #111 0 0 1px, rgba(255,255,255,0.1) 2px 2px 3px;
+}
+    
+#box:hover #flash {
+  display: inline-block;
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 10px;
+ margin-left: 0px;
+  transition:transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 1s ease-out;
+  
+}
+a{
+text-decoration: none;
+color:rgba(255,255,255,0.6);
+
+}
+ 
+/* light ------------------------------------------------------ */
+
+#light {
+  display: inline-block;
+  text-shadow: #111 0 0 1px, rgba(255,255,255,0.1) 2px 2px 3px;
+ 
+  display: inline-block;
+  text-shadow: #111 0 0 1px, rgba(255,255,255,0.1) 2px 2px 3px;
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 10px;
+ 
+  transition:transform 1.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 1s ease-out;
+}
+#light2 {
+  display: inline-block;
+  text-shadow: #111 0 0 1px, rgba(255,255,255,0.1) 2px 2px 3px;
+ 
+  display: inline-block;
+  text-shadow: #111 0 0 1px, rgba(255,255,255,0.1) 2px 2px 3px;
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 10px;
+ 
+  transition:transform 1.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 1s ease-out;
+  opacity:0;
+}
+
+
+
+p:hover{
+text-shadow: #fff 0 0 4px, #fcffbb 0 0 10px;
+ opacity: 1;
+  transition:transform 1.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 1s ease-out;
+}
+
+#poem{
+	float: left;
+	
+}
+#line1{
+float:right;
+	margin:1px 40px 35px 1px;
+	
+}
+#line2{
+clear:both;
+margin:13px 75px 2px 62px;
+float:left;
+}
+#line3{
+float:right;
+	margin:1px 70px 35px 1px;
+}
+#line4{
+clear:both;
+margin:13px 75px 2px 62px;
+float:left;
+}
+#line5{
+float:right;
+	margin:1px 70px 35px 1px;
+}
+#line6{
+clear:both;
+margin:13px 75px 2px 62px;
+float:left;
+}
+#line7{
+float:right;
+	margin:1px 70px 35px 1px;
+}
+#line8{
+clear:both;
+margin:13px 75px 2px 262px;
+float:left;
+}
+
+#zombie{
+position: absolute;
+top:40%;
+left:28%;
+opacity:0;
+}
+#ghost{
+position: absolute;
+top:20%;
+left:80%;
+opacity:0;
+}
+
+#monster1{
+position: absolute;
+top:68%;
+left:60%;
+opacity:0;
+}
+
+#monster2{
+position: absolute;
+top:10%;
+left:2%;
+opacity:0;
+}
+
+
+#audio{
+opacity:0;
+}
+
+/* Back Button */
+.go-back {
+	position: fixed;
+	top: 40%;
+	left: 0%;
+	text-decoration: none;
+	color: white;
+	padding: 1em;
+	display: none;
+	z-index: 5;
+	  opacity:0.6;
+	  font-size: 0.6em;
+	
+}
+
+.go-back:hover {
+opacity:1;
+}
+
+

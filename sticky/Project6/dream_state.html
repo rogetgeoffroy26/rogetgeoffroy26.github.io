@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dream State</title>
+
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="dream_state.css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="jquery-1.11.1.min%20copy%202.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+<div id="text1"><h1>anatomy</h1></div>
+<div id="text2"><h1>of design</h1></div>
+
+
+
+<div value="Collapse" id="button1">&#9718;
+</div><div id="press1">press me</div>
+<div  id="line1"><video id="vid1" width="300" height="240" >
+  <source src="videos/Drawing%20and%20coloring%20a%20crazy%20realistic%20eye.mp4" type="video/mp4">
+  <source src="videos/Drawing%20and%20coloring%20a%20crazy%20realistic%20eye.ogv" type="video/ogg">
+</video>
+</div>
+<div  id="line2"><video id="vid2" width="300" height="240" >
+  <source src="videos/Drawing%20time%20lapse_%20Iron%20Man%20-%20hyperrealistic%20art.mp4" type="video/mp4">
+  <source src="videos/Drawing%20time%20lapse_%20Iron%20Man%20-%20hyperrealistic%20art.ogv" type="video/ogg">
+</video>
+</div>
+
+<div value="Collapse" id="button2">&#9717;</div><div id="press2">press me</div>
+</div>
+
+<!--Back Button-->
+<a href="../index.html" class="go-back">&#9664;</a>
+<!--End-->
+
+<script>
+$(document).ready(function(){
+	$("#text1").animate({"margin-left":"+=60%"},1500);
+});
+</script>
+<script>
+
+$(document).ready(function(){
+	$("#text2").animate({"margin-left":"-=80%"},1500);
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+	var $button1=$("#button1");
+	var $myVideo1 = $("video#vid1"); 
+
+	$button1.click(function(){
+		var $line1=$("#line1");
+		if($line1.css("opacity")==0){
+			$line1.animate({"margin-left":"+=20%", "opacity":1}, 1000);
+			$myVideo1.slideDown(3000);
+			$myVideo1.get(0).play(); 
+			$(this).attr("value", "Collapse");
+		}else{
+			$line1.animate({"margin-left":"-=20%", "opacity":0}, 2000);
+			$myVideo1.slideUp(500);
+			$myVideo1.get(0).pause(); 
+			$(this).attr("value", "Expand");
+		}
+	});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+	var $button2=$("#button2");
+		var $myVideo2 = $("#vid2"); 
+
+	$button2.click(function(){
+		var $line2=$("#line2");
+		if($line2.css("opacity")==0){
+			$line2.animate({"margin-left":"-=20%", "opacity":1}, 1000);
+			$myVideo2.slideDown(3000);
+			$myVideo2.get(0).play(); 
+			$(this).attr("value", "Collapse");
+		}else{
+			$line2.animate({"margin-left":"+=20%", "opacity":0}, 2000);
+			$myVideo2.slideUp(500);
+			$myVideo2.get(0).pause();
+			$(this).attr("value", "Expand");
+		}
+	});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+	var $myVideo1 = $("video#vid1"); 
+
+	$myVideo1.click(function(){
+		if($myVideo1.css("width")=="300px"){
+			$myVideo1.animate({"margin-left":"+=10%", "width":"500px", "height":"400px"}, 1000);
+			$(this).attr("value", "Collapse");
+		}else{
+			$myVideo1.animate({"margin-left":"-=10%", "width":"300px", "height":"240px"}, 1000);
+			$(this).attr("value", "Expand");
+		}
+	});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+	var $myVideo2 = $("video#vid2"); 
+
+	$myVideo2.click(function(){
+		if($myVideo2.css("width")=="300px"){
+			$myVideo2.animate({"margin-left":"-=15%","margin-top":"-=10%", "width":"500px", "height":"400px"}, 1000);
+			$(this).attr("value", "Collapse");
+		}else{
+			$myVideo2.animate({"margin-left":"+=15%","margin-top":"+=10%", "width":"300px", "height":"240px"}, 1000);
+			$(this).attr("value", "Expand");
+		}
+	});
+});
+
+</script>
+
+<script>
+$(document).ready(function(){
+	$("#button1").mouseover(function(){
+		$("#button1").animate({ "font-size":"4.5em" },1000);
+		$("#press1").animate({"margin-left":"+=5%", "opacity":1}, 1200);
+	});
+	$("#button1").mouseout(function(){
+		$("#button1").animate({"font-size":"4em"},1000);
+				$("#press1").animate({"margin-left":"-=5%", "opacity":0}, 1200);
+
+	});
+
+});
+</script>
+
+<script>
+$(document).ready(function(){
+	$("#button2").mouseover(function(){
+		$("#button2").animate({ "font-size":"4.5em" },1000);
+		$("#press2").animate({"margin-left":"+=5%", "opacity":1}, 1200);
+	});
+	$("#button2").mouseout(function(){
+		$("#button2").animate({"font-size":"4em"},1000);
+				$("#press2").animate({"margin-left":"-=5%", "opacity":0}, 1200);
+
+	});
+
+});
+</script>
+
+
+</body>
+</html>

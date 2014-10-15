@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>My Infinite Scroll</title>
+
+<meta charset="utf-8">
+<meta name="keywords" content="Roget,Geoffroy,Profile,Parallax,">
+<meta name="author" content="Roget Geoffroy">
+
+<!Style Links-->
+<link rel="stylesheet" type="text/css" href="css%20/style.css">
+<link rel="stylesheet" type="text/css" href="css%20/scroll_style/style2.css">
+<link rel="stylesheet" type="text/css" href="css%20/scroll_style/scroll_style.css">
+<link rel="stylesheet" type="text/css" href="css%20/scroll_style/normalize.css">
+<link rel="stylesheet" type="text/css" href="css%20/scroll_style/facade.css">
+
+
+<!--Script Links-->
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/script2.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+<script src="js/jquery.easing.1.3%20copy.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<!--Inline Scripts-->
+<script>
+//Mobile Menu Start
+ $(document).ready(function(){
+  $('.box').click(function(){
+    if($(this).hasClass('cl-men')){
+      $(this).addClass('op-men').removeClass('cl-men');
+      $(this).animate({
+        height: '30%'
+      }).animate({
+        width: '20%'
+      }).animate({
+      marginLeft:'1%'});
+      $('.tx').delay(800).animate({
+        opacity: '1'
+      });
+    } else {
+      $(this).addClass('cl-men').removeClass('op-men');
+      $('.tx').animate({
+        opacity: '0'
+      });
+      $(this).delay(400).animate({
+        width: '5%'
+      }).animate({
+        height: '3em'
+      }).animate({
+	      marginLeft:'0%'
+      }).animate({
+	      position:'fixed'
+      });
+    }
+  });
+});
+
+//End
+
+
+</script>
+
+
+<script>
+
+//Top Button
+$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				
+				$('body,html').animate({scrollTop: 0}, 'slow');
+			})
+			
+		});
+		
+//End
+</script>
+
+<script>
+ $(document).ready(function() {
+
+ $('#contactlink').click = function (){
+  $(document).scrollTo('#pic5');
+ } 
+
+ });
+
+</script>
+
+<script>
+	//Back Button
+$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 0) {
+					$('.go-back').fadeIn(0);
+				} else {
+					$('.go-back').fadeOut(0);
+				}
+			});
+			
+			
+		});
+		
+//End
+</script>
+
+ 
+<script>
+$.noConflict(true);
+// Code that uses other library's $ can follow here.
+</script>
+
+</head>
+
+<body>
+<!--Mobile Menu Start-->
+ <a href="#" class="menu example5"><span></span></a>
+
+    <div class='cl-men box'><br/>
+      <a class='tx' href='#firstPage'>First Page</a><br/>
+      <a class='tx' href='#secondPage'>Second Page  </a><br/>
+      <a class='tx' href='#thirdPage'>Third Page  </a><br/>
+      <a class='tx' href='#pic4'>Fifth Page  </a><br/>
+      <a class='tx' href='#'>Sixth Page  </a><br/>
+    </div>
+<!--Mobile Menu End-->
+
+
+
+<!--"wrap div start-->
+<div id="wrap">
+<div id="home">
+<h1 class="text">
+  <span class="char1">M</span>
+  <span class="char2"></span> 
+  <span class="char3">Y</span>
+  <span class="char4"></span>
+  <span class="char5">I</span>
+    <span class="char6">N</span>
+    <span class="char7">F</span>
+  <span class="char8">I</span>
+    <span class="char9">N</span>
+  <span class="char10">I</span>
+  <span class="char11">T</span>
+  <span class="char12">E</span>
+  <span class="char13"></span>
+  <span class="char14">S</span>
+  <span class="char15">C</span>
+  <span class="char16">R</span>
+  <span class="char17">O</span>
+  <span class="char18">L</span>
+  <span class="char19">L</span>
+    <span class="char20"></span>
+    <span class="char21"></span>
+  <span class="char22"></span>
+    <span class="char23"></span>
+  
+
+  <!-- you get the idea -->
+  
+</h1>
+	<img class="gif" src="img/bear_background2.gif" alt="bear_background2" width="640" height="479">	
+</div>
+ <!--Back Button-->
+<a href="../index.html" class="go-back">&#9664;</a>
+<!--End-->
+
+<!--End-->
+<h1> The Faster You Scroll The More You See</h2>
+<!--Arrow1-->
+<!--First Page Div-->
+<div class="newData" id="firstPage">
+<img class="arrow" onclick="nextpage()" src="img/ani_arrow1.gif" alt="ani_arrow1" width="100" height="100">
+</div>
+<!--End-->
+
+<!--Second Page Div-->
+<div class="newData2" id="secondPage">
+<img class="arrow2" onclick="nextpage()" src="img/ani_arrow1.gif" alt="ani_arrow1" width="100" height="100">
+</div>
+<!--End-->
+
+<!--Parallax Content-->
+
+
+
+<!--Third Page Div-->
+<div class="newData3" id="thirdPage">
+<img class="arrow2" onclick="nextpage()" src="img/ani_arrow1.gif" alt="ani_arrow1" width="100" height="100">
+</div>
+<!--End-->
+
+<!--Parallax Content-->
+
+
+
+<!--Parallax Div1-->
+<div id="pic2">
+
+					<section class="demo" style="overflow-x: hidden">
+					<div class="spacer s1"></div>
+					<div id="trigger4" class="spacer s1"></div>
+					<div class="spacer s0"></div>
+					<script>
+						$(document).ready(function($) {
+							// build tween
+							var tween = TweenMax.staggerFromTo(".animate4", 2, {left: 700}, {left: 0, ease: Back.easeOut}, 0.15);
+
+							// build scene
+							var scene = new ScrollScene({triggerElement: "#trigger4", duration: 300})
+											.setTween(tween)
+											.addTo(controller);
+
+							// show indicators (requires debug extension)
+							scene.addIndicators();
+						});
+					</script>
+				</section>		
+				<div class="spacer s_viewport"></div>
+			</div>
+		</div>
+	</div>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-37524344-3', 'janpaepke.github.io');
+		ga('send', 'pageview');
+	</script>
+			
+
+
+</div>
+<!--End-->
+
+
+<div id="content_layer"> <script> for(var i=1; i < 10000; i++){ document.write('<h1>Count how many times you see me '+i+'</h1>'); } </script> </div>
+<!--End-->
+
+<!--Top Button-->
+<a href="#home" class="go-top">Go Home</a>
+<!--End-->
+
+<!--End of wrap div-->
+</div>
+</body>
+</html>
+
+
