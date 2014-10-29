@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>Profile Project</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.scss" />
+	<script type="" src="script.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+	
+	
+	<script>
+	//Mobile Menu Start
+ $(document).ready(function(){
+  $('.box').click(function(){
+    if($(this).hasClass('cl-men')){
+      $(this).addClass('op-men').removeClass('cl-men');
+      $(this).animate({
+        height: '30%'
+      }).animate({
+        width: '12%'
+      }).animate({
+      marginLeft:'1%'});
+      $('.tx').delay(800).animate({
+        opacity: '1'
+      });
+    } else {
+      $(this).addClass('cl-men').removeClass('op-men');
+      $('.tx').animate({
+        opacity: '0'
+      });
+      $(this).delay(400).animate({
+        width: '5%'
+      }).animate({
+        height: '7%'
+      }).animate({
+	      marginLeft:'0%'
+      }).animate({
+	      position:'fixed'
+      });
+    }
+  });
+});
+
+//End
+</script>
+<!--anchor Buttons-->
+
+ <script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $(".tx").click(function(event) {
+    event.preventDefault();
+    $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
+    } );
+  } );
+
+</script>
+
+
+</head>
+
+<body>
+
+	<div id="page-wrap">
+		<div id="inside">
+			
+			<div id="header">
+				<img src="img/name_logo_1.png" alt="name_logo_1" width="266" height="219">
+			</div>
+		
+			
+	
+			<div id="main-content">
+						
+								
+				<!--Mobile Menu Start-->
+ <a href="#" class="menu example5"><span></span></a>
+
+    <div class='cl-men box'><br/>
+      <a class='tx' href='#firstPage'>First Page</a><br/>
+      <a class='tx' href='#secondPage'>Second Page  </a><br/>
+      <a class='tx' href='#thirdPage'>Third Page  </a><br/>
+      <a class='tx' href='#fourthPage'>Fourth Page  </a><br/>
+      <a class='tx' href='#fifthPage'>Fifth Page  </a><br/>
+    </div>
+<!--Mobile Menu End-->
+	
+				<br /><br />
+				
+<div class="section1" id="firstPage">				
+<h2>Ii putamus mutationem wisi laoreet</h2>
+				<p>
+				Litterarum vero at tincidunt adipiscing vel. Dolore quod in lectores littera iis. Dolor lobortis sequitur nobis per soluta. Dignissim fiant diam option facer decima. Facilisis est in erat ullamcorper eodem. Mirum veniam quam luptatum ut anteposuerit. Commodo luptatum qui parum humanitatis lobortis. Molestie feugiat hendrerit dolor nam sed. Insitam feugait te wisi doming quam. Nostrud formas in augue dolore sit. 
+				</p>
+</div>	
+			
+<div class="section2" id="secondPage">							
+<h2>Ii putamus mutationem wisi laoreet</h2>
+				<p>
+				Hendrerit lectorum et notare legentis nulla. Habent clari commodo claram mazim magna. Vulputate nihil Investigationes sequitur humanitatis claritatem. Assum exerci molestie nobis feugait eodem. Aliquam delenit cum sed me veniam. Nunc eodem facilisi iis iriure commodo. Tempor typi illum velit consuetudium zzril. Tation liber claritas minim iis nobis. Claritatem placerat delenit iusto iis facilisis. Veniam tempor dolore congue mazim esse. 
+				</p>
+</div>
+
+<div class="section3" id="thirdPage">							
+<h2>Ii putamus mutationem wisi laoreet</h2>
+				<p>
+				In possim luptatum seacula est claram. Legere molestie quinta nibh erat ut. Vel feugait nostrud commodo esse delenit. Amet elit lectorum dolor vel blandit. Velit qui est tation legere at. Notare tincidunt te dynamicus in legere. Liber typi dynamicus legunt nulla est. Nunc option quod est formas legere. Dynamicus accumsan mutationem quinta in iis. Quis quam facilisis iusto eodem possim. 
+				</p>
+</div>
+
+<div class="section4" id="fourthPage">								
+<h2>Ii putamus mutationem wisi laoreet</h2>
+				<p>
+				Ut in dignissim iriure dolore feugiat. Claritas ut non anteposuerit te vero. Et facit amet at vero sequitur. Eros exerci non et ut facilisis. Suscipit consectetuer accumsan quam nonummy illum. Ullamcorper ea legunt volutpat me consuetudium. Qui littera nonummy delenit modo eorum. Facilisi hendrerit et typi lorem non. Tempor doming in iriure facit eleifend. Ii magna consectetuer consuetudium qui adipiscing. 
+				</p>
+</div>				
+
+<div class="section5" id="fifthPage">							
+<h2>Ii putamus mutationem wisi laoreet</h2>
+				<p>
+				Videntur wisi dolore parum quinta in. Te in aliquip nihil dynamicus gothica. Nunc possim legunt molestie modo wisi. In zzril vero zzril dolore augue. Facilisi lectores nihil exerci doming demonstraverunt. Typi qui sequitur notare modo magna. Accumsan facer Investigationes qui eum fiant. Me habent cum est eu feugait.
+				</p>
+</div>			
+			</div>
+			
+			<div style="clear: both;"></div>
+			
+			<div id="footer">
+				<p>Footer stuff.</p>
+			</div>
+		
+		</div>
+		
+		<div style="clear: both;"></div>
+	
+	</div>
+
+</body>
+
+</html>

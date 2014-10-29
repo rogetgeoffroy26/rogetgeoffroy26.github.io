@@ -1,0 +1,229 @@
+@import url("http://fonts.googleapis.com/css?family=Lato");
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,300");
+
+ html,body{
+	 margin:0;
+	 width:100%;
+	 height:auto;
+ }
+
+
+#page-wrap {
+	width:expression(document.body.clientWidth < 782? "780px" : document.body.clientWidth > 1262? "1260px" : "auto");
+}
+
+
+
+body {
+	font-size: 62.5%;
+background-size: 100%;
+background: url("../Midterm%20Project/img/architect_bg1.jpg") no-repeat center center fixed;
+-webkit-background-size: cover; //for safari and chrome
+-moz-background-size: cover; // for firefox
+-o-background-size: cover; // for opera
+background-size: cover;
+}
+
+p, li {
+	font: 1.5em/1.8em "Oswald", sans-serif;
+		font-weight: 300;
+	margin-bottom: 10px;
+		padding:10px;
+
+}
+
+h1 {
+	font: 2.5em "Oswald", sans-serif;
+		font-weight: 300;
+	color: white;
+	height: 0px;
+		padding:10px;
+
+}
+
+h2 {
+	font: 2.0em "Oswald", sans-serif;
+		font-weight: 300;
+	color: green;
+	margin-bottom: 10px;
+	padding:10px;
+}
+
+ul {
+	margin-left: 25px;
+}
+
+img {
+	border: none;
+}
+
+#page-wrap {
+	width:100%;	margin: 0% 0%;
+	}
+	#page-wrap #inside {
+		margin: 0%;
+		padding-top: 0%;
+		padding-bottom: 0%;
+	}
+	
+#main-content {
+	padding-left: 0;
+	padding-top: 0;
+}
+	
+#header {
+	color: rgba(0,0,0,0.5);
+	font-size: 7.0em;
+	text-decoration: none;
+		margin-top:-1%;
+		margin-bottom: 2%;
+	text-align: center;
+	height:30px;
+	width:100%;
+}
+	
+
+
+#footer {
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+	width:100%;
+}
+
+
+/**Mobile Menu Start**/
+
+/**mobile menu start**/
+  .menu {
+	position: fixed;
+	display:  inline-block;
+	width: 4%;
+	height: 3em;
+	margin: 1%;
+	z-index:4;
+}
+.menu span {
+	margin: 0%;
+	position: fixed;
+	top: 8%;
+}
+
+.menu span:before, .menu span:after {
+	position: fixed;
+	content: '';
+}
+.menu span, .menu span:before, .menu span:after {
+	width: 30px;
+	height: 6px;
+	background-color: #000;
+	display: block;
+}
+.menu span:before {
+	margin-top: -12px;
+}
+.menu span:after {
+	margin-top: 12px;
+}
+
+
+
+
+/**mobile menu end**/
+
+.box {
+position:fixed;
+margin:0%; 
+top:5%;
+width: 5%;
+  height: 7%;
+  z-index: 5;
+  opacity:0.2;
+ background: rgba(0,0,0,0.2);}
+
+.box:hover {
+margin:0%; 
+top:5%;
+width: 5%;
+  height: 7%;
+  z-index: 5;
+  opacity:0.6;
+  background: green;
+ }
+ /**
+ .box {
+position:fixed;
+margin:0px; 
+top:30px;
+width: 45px;
+  height: 50px;
+  z-index: 5;
+  opacity:0.2;
+ background: rgba(0,0,0,0.2);}
+**/
+
+ 
+/**.box:hover {
+margin:0px; 
+top:30px;
+width: 45px;
+  height: 50px;
+  z-index: 5;
+  opacity:0.6;
+  background: green;
+ }
+**/
+
+
+.tx {
+  opacity: 0;
+	font: 2.0em "Oswald", sans-serif;
+	font-weight: 300;
+  text-decoration: none;
+  color: white;
+  margin: 45px 0px 0px 45px;
+  text-shadow: #111 0 0 1px, rgba(255,255,255,0.1) 2px 2px 3px;
+  transition: margin-left 1s cubic-bezier(0, 0.75, 0, 1);
+}
+
+.tx:hover {
+  background-color: #6d6d6d;
+}
+
+
+
+
+/**Mobile Menu End**/
+
+
+/**Section 1 div start**/
+.section1{
+	background:rgba(0,0,0,0.5);
+	height:600px;
+	
+}
+.section2{
+	height:700px;
+	background: rgba(183,143,199,0.5);
+
+}
+
+.section3{
+	height:750px;
+	background: rgba(118,186,247,0.5);
+
+}
+.section4{
+	height:400px;
+	background: rgba(255,255,255,0.5);
+}
+.section5{
+	height:300px;
+	background: rgba(251,51,89,0.5);
+}
+
+
+/**Section 1 div end**/
